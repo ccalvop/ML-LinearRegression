@@ -6,7 +6,7 @@
 
 **Objetivo:**
 
-Este proyecto se enfoca en analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Utilizaremos regresión lineal para comprender cómo la cantidad de tiempo que un estudiante dedica al estudio influye en sus resultados académicos.
+Este proyecto se enfoca en analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Utilizaremos la regresión lineal para comprender cómo la cantidad de tiempo que un estudiante dedica al estudio influye en sus resultados académicos.
 
 **Software utilizados:**
 
@@ -18,7 +18,7 @@ Este proyecto se enfoca en analizar la relación entre las horas de estudio de l
 
 **Archivos y código a crear:**
 
-  - Un cuaderno Jupyter ("Student_Study_Hours_Analysis.ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
+  - Jupyter Notebook ("Student_Study_Hours_Analysis.ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
   - Un archivo CSV ("student_study_data.csv") que contiene los datos de las horas de estudio y las calificaciones de los estudiantes.
 
 **Resultado esperado:**
@@ -27,17 +27,28 @@ Haber realizado un análisis efectivo de regresión lineal que permita comprende
 
 ***
 
-**Resumen de los pasos a seguir:**
+**Pasos a seguir:**
 
-  - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression"
+  - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression". Copiamos el archivo "dataset" **score.csv** en este directorio.
   
-  - Crear un nuevo archivo con extensión "ipynb": el notebook de jupyter: "Student_Study_Hours_Analysis.ipynb".
-  
-  - (Teniendo Docker instalado) Abrimos Docker, en Windows: "Docker Desktop".
+  - **Crear un nuevo notebook con Jupyter Notebook**:
 
-    //img captura docker desktop
+    ***¿Qué es un notebook? ¿y Jupyter Notebook?***
+    (*)Los notebooks son documentos interactivos en los que podemos integrar texto, código ejecutable, así como, tablas o figuras.
+    (**)Jupyter Notebook es una herramienta web basada en celdas que permite programar código en Python. Es un software del Proyecto Jupyter cuyo propósito es desarrollar herramientas interactivas para Data Science y computación científica
+
+    Para crear un nuevo Jupyter Notebook vacío que pueda abrirse correctamente en Jupyter Notebook, lo mejor es crearlo desde dentro del propio programa web Jupyter Notebook. Así nos aseguraremos de que se genere un archivo .ipynb (IPythonNoteBook) con la estructura JSON adecuada y los campos necesarios para funcionar correctamente. Entonces, primero, crearemos el notebook con Jupyter.
+ 
+  - **Jupyter Notebook**:
+
+Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Docker**: 
+*La razón principal para ejecutar Jupyter Notebook desde un contenedor Docker en lugar de instalarlo directamente en Windows (o en otros sistemas) está relacionada con la gestión de entornos y dependencias. El uso de contenedores Docker es una práctica común en el desarrollo de software y análisis de datos, ya que proporciona un entorno controlado y aislado que facilita la gestión de dependencias y la portabilidad de proyectos.*
+
+    (Teniendo Docker instalado) Abrimos Docker. En Windows: "Docker Desktop".
+
+    //img captura windows programs docker desktop
       
-  - Abrimos una terminal y ejecutamos el comando:
+  - Abrimos una **terminal** y ejecutamos el comando:
 
       **"docker run -p 8888:8888 -v C:\ml\01_linear_regression:/home/jovyan/work jupyter/scipy-notebook"**
 
@@ -57,7 +68,14 @@ Haber realizado un análisis efectivo de regresión lineal que permita comprende
 
     **"jupyter/scipy-notebook"** Esto es el nombre de la imagen de Docker que se utilizará para crear el contenedor. jupyter/scipy-notebook es una imagen oficial de Jupyter Notebook que incluye bibliotecas científicas de Python.
 
-  
+  - Podemos observar en Docker Desktop que la imagen del contenedor está descargada y en uso, y que el contenedor está corriendo:
+
+    ///img captura docker desktop
+
+  - En la terminal, verás un enlace que comienza con "http://127.0.0.1:8888/?token=...". Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
+
+  - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)".
+    
 
 
     
