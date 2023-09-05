@@ -1,8 +1,10 @@
-///img
+<p align="center">
+<img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/a7d118c9-a3cb-4aee-b4c3-260ed5db1e0b" />
+</p>
 
 ### ML-LinearRegression-StudentStudyHours
 
-///diagram
+![diagram](https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95)
 
 **Objetivo:**
 
@@ -23,7 +25,7 @@ Este proyecto se enfoca en analizar la relación entre las horas de estudio de l
 
 **Resultado esperado:**
 
-Haber realizado un análisis efectivo de regresión lineal que permita comprender cómo las horas de estudio de los estudiantes se relacionan con sus calificaciones. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
+Análisis efectivo de regresión lineal que permita comprender cómo las horas de estudio de los estudiantes se relacionan con sus calificaciones. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
 
 ***
 
