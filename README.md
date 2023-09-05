@@ -72,7 +72,7 @@ Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Do
 
     ///img captura docker desktop
 
-  - En la terminal, verás un enlace que comienza con "http://127.0.0.1:8888/?token=...". Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
+  - En la terminal, verás un enlace que comienza con "\http://127.0.0.1:8888/?token=...". Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
   - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Student_Study_Hours_Analysis.ipynb".
 
@@ -80,19 +80,59 @@ Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Do
 
 Student_Study_Hours_Analysis.ipynb
 
-//CARBON-code
-
+//CARBON-code  
 #imports
 from numpy import *
 import matplotlib.pyplot as plt
 
 #magic command
-%matplotlib inline
+%matplotlib inline  
+//CARBON-code
 
 **from numpy import \***   
-numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
+Numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
 
-    
+**import matplotlib.pyplot as plt**  
+Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones, como gráficos y gráficos. matplotlib.pyplot es un módulo dentro de Matplotlib que proporciona una interfaz similar a la de MATLAB para crear gráficos. La convención de renombrar este módulo como plt es común y facilita el uso.
 
+**%matplotlib inline**  
+Es una "comando mágico" en Jupyter Notebook que permite que las gráficas generadas con Matplotlib se muestren directamente en la salida del cuaderno, en lugar de abrirse en una ventana emergente separada
 
+//CARBON-code
+#Load data
+points = genfromtxt('score.csv', delimiter=',')
+
+#Extract columns
+x = array(points[:,0])
+y = array(points[:,1])
+
+#Plot the dataset
+plt.scatter(x,y)
+plt.xlabel('Horas de estudio')
+plt.ylabel('Resultados de examenes')
+plt.title('Dataset')
+plt.show()
+//CARBON-code
+
+#Load data  
+**points = genfromtxt('score.csv', delimiter=',')**  
+Este código utiliza la función genfromtxt de la biblioteca NumPy para cargar datos desde un archivo CSV llamado 'score.csv'. El parámetro delimiter=',' indica que las columnas en el archivo CSV están separadas por comas. Los datos se cargan en la variable points, que será una matriz NumPy que contiene los datos del archivo CSV.
+
+#Extract columns  
+**x = array(points[:,0])**  
+Se extrae la primera columna de la matriz points y se almacena en la variable x. 
+(La expresión [:,0] se utiliza para seleccionar elementos de una matriz NumPy en función de su posición. En este caso selecciona todas las filas de la matriz y solo la primera columna)  
+**y = array(points[:,1])**  
+Se extrae la segunda columna de la matriz points y se almacena en la variable y
+
+#Plot the dataset  
+**plt.scatter(x,y)**
+*Utiliza la función scatter de Matplotlib para crear un gráfico de dispersión de los datos. Se pasa x como los valores en el eje X (horas de estudio) y y como los valores en el eje Y (puntuaciones de los exámenes). Esto crea un gráfico que muestra cómo las puntuaciones de los exámenes están relacionadas con las horas de estudio.*  
+**plt.xlabel('Horas de estudio')**  
+**plt.ylabel('Resultados de examenes')**  
+*Estos comandos agregan una etiqueta al eje X y al eje Y del gráfico, indicando que las unidades en el eje X son "Hours of study" (Horas de estudio) y en el eje Y son "Test scores" (Puntuaciones de los exámenes).*  
+**plt.title('Dataset')**  
+*Agrega un título al gráfico.*  
+**plt.show()**  
+*Esta función muestra el gráfico generado en la pantalla.*
     
