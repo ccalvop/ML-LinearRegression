@@ -125,7 +125,7 @@ Se extrae la primera columna de la matriz points y se almacena en la variable x.
 **y = array(points[:,1])**  
 Se extrae la segunda columna de la matriz points y se almacena en la variable y
 
-###\#Plot the dataset   
+### \#Plot the dataset   
 **plt.scatter(x,y)**
 *Utiliza la función scatter de Matplotlib para crear un gráfico de dispersión de los datos. Se pasa x como los valores en el eje X (horas de estudio) y y como los valores en el eje Y (puntuaciones de los exámenes). Esto crea un gráfico que muestra cómo las puntuaciones de los exámenes están relacionadas con las horas de estudio.*  
 **plt.xlabel('Horas de estudio')**  
