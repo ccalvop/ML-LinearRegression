@@ -81,6 +81,7 @@ Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Do
 Student_Study_Hours_Analysis.ipynb
 
 //CARBON-code
+
 #imports
 from numpy import *
 import matplotlib.pyplot as plt
@@ -88,7 +89,7 @@ import matplotlib.pyplot as plt
 #magic command
 %matplotlib inline
 
-**from numpy import \* ** 
+**from numpy import \*** 
 numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
 
     
