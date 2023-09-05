@@ -74,7 +74,23 @@ Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Do
 
   - En la terminal, verás un enlace que comienza con "http://127.0.0.1:8888/?token=...". Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
-  - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)".
+  - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Student_Study_Hours_Analysis.ipynb".
+
+***
+
+Student_Study_Hours_Analysis.ipynb
+
+//CARBON-code
+#imports
+from numpy import *
+import matplotlib.pyplot as plt
+
+#magic command
+%matplotlib inline
+
+**from numpy import * ** 
+numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
+
     
 
 
