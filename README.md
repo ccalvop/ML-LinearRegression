@@ -11,7 +11,7 @@
 
 **Objetivo:**
 
-Este proyecto se enfoca en analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Utilizaremos la regresión lineal para comprender cómo la cantidad de tiempo que un estudiante dedica al estudio influye en sus resultados académicos.
+Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Utilizaremos la regresión lineal simple para comprender cómo la cantidad de tiempo que un estudiante dedica al estudio influye en sus resultados académicos.
 
 **Software utilizados:**
 
