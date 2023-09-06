@@ -2,6 +2,9 @@
 <img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/a7d118c9-a3cb-4aee-b4c3-260ed5db1e0b" />
 </p>
 
+***¿Qué es la regresión lineal:***  
+*La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada y la que vamos a utilizar en este ejemplo), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
+
 ### ML-LinearRegression-StudentStudyHours
 
 ![diagram](https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95)
