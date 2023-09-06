@@ -19,7 +19,7 @@ Este proyecto plantea analizar la relación entre las horas de estudio de los es
       con la librería NumPy para implementar la regresión lineal).
       con la librería Matplotlib para la creación de gráficos.
   - Jupyter Notebook para la creación y documentación del análisis.
-  - Conjunto de datos "Student Study Hours" en formato CSV obtenidos de Kaggle.
+  - Conjunto de datos "Student Study Hours" en formato CSV obtenidos de Kaggle (score.csv).
 
 **Archivos y código a crear:**
 
