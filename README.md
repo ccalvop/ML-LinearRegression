@@ -12,6 +12,8 @@ ML-LinearRegression-**StudentStudyHours** *Este proyecto plantea analizar la rel
 **Regresión lineal multiple**:  
 ML-LinearRegression-**LifeExpectancy** *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
 
+***
+
 **Objetivo:**
 
 Emplearemos la regresión lineal simple y múltiple para analizar la conexión entre una o varias variables independientes y una variable dependiente. El objetivo es comprender de qué manera las predicciones se ven influenciadas por variaciones en la/s variable/s de entrada.
