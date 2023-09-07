@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/a7d118c9-a3cb-4aee-b4c3-260ed5db1e0b" /></p>
 
-<p align="center">¿Qué es la regresión lineal?</p>
+#### <p align="center">¿Qué es la regresión lineal?</p>
 
 *La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
@@ -37,24 +37,24 @@ Análisis efectivo de regresión lineal (simple o múltiple) que permita compren
 
 ***
 
-### <p align="center">Preparacion del entorno Jupyter Notebook</p>
+### <p align="center">Preparación del entorno Jupyter Notebook</p>
 
 Pasos a seguir:
 
-  - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression". Copiaremos el archivo "dataset" **archivo.csv** en este directorio.
+  - Crear un **directorio** o carpeta donde trabajaremos en nuestra maquina local, por ejemplo en Windows "C:\ml\01_linear_regression". Copiaremos el archivo "dataset" **archivo.csv** en este directorio.
   
-  - **Crear un notebook con Jupyter Notebook**:
+  - Crear un notebook con **Jupyter Notebook**:
 
     ***¿Qué es un notebook? ¿y Jupyter Notebook?***
     (*)Los notebooks son documentos interactivos en los que podemos integrar texto, código ejecutable, así como, tablas o figuras.
     (**)Jupyter Notebook es una herramienta web basada en celdas que permite programar código en Python. Es un software del Proyecto Jupyter cuyo propósito es desarrollar herramientas interactivas para Data Science y computación científica
 
-    Para crear un nuevo Jupyter Notebook vacío que pueda abrirse correctamente en Jupyter Notebook, lo mejor es crearlo desde dentro del propio programa web Jupyter Notebook. Así nos aseguraremos de que se genere un archivo .ipynb (IPythonNoteBook) con la estructura JSON adecuada y los campos necesarios para funcionar correctamente. Entonces, primero, crearemos el notebook con Jupyter.
+    Para crear un nuevo **Jupyter Notebook** vacío que pueda abrirse correctamente, lo mejor es crearlo desde dentro del propio Jupyter Notebook. Así nos aseguraremos de que se genere un archivo .ipynb (IPythonNoteBook) con la estructura JSON adecuada y los campos necesarios para funcionar correctamente. Entonces, primero, crearemos el notebook con Jupyter.
  
   - **Jupyter Notebook**:
 
-Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Docker**: 
-*La razón principal para ejecutar Jupyter Notebook desde un contenedor Docker en lugar de instalarlo directamente en Windows (o en otros sistemas) está relacionada con la gestión de entornos y dependencias. El uso de contenedores Docker es una práctica común en el desarrollo de software y análisis de datos, ya que proporciona un entorno controlado y aislado que facilita la gestión de dependencias y la portabilidad de proyectos.*
+Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerlo funcionar desde un **contenedor Docker**: 
+*La razón principal para ejecutar Jupyter Notebook desde un contenedor Docker en lugar de instalarlo localmente está relacionada con la gestión de entornos y dependencias. El uso de contenedores Docker es una práctica común en el desarrollo de software y análisis de datos, ya que proporciona un entorno controlado y aislado (con las dependencias y librerias ya instaladas).*
 
     (Teniendo Docker instalado) Abrimos Docker. En Windows: abrimos el programa "Docker Desktop".
 
@@ -156,8 +156,10 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 
 ***
 
-## ML-LinearRegression-2proyecto
+## ML-LinearRegression-LifeExpectancy
 
 diagrama
 
-### 2proyecto.ipynb
+### Life_Expectancy_Analysis.ipynb
+
+//CARBON-code
