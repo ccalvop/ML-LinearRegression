@@ -3,15 +3,17 @@
 </p>
 
 ***¿Qué es la regresión lineal?***  
-*La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada y la que vamos a utilizar en este ejemplo), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
+*La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
 **Proyectos:**
 
+Regresión lineal simple  
 ML-LinearRegression-**StudentStudyHours**  
 *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
 
-ML-LinearREgression-**2proyecto**  
-*Este proyecto plantea analizar la relación entre...*
+Regresión lineal multiple  
+ML-LinearRegression-**LifeExpectancy**  
+*Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
 
 **Objetivo:**
 
@@ -27,12 +29,12 @@ Emplearemos la regresión lineal simple para analizar la conexión entre una var
 
 **Archivos y código a crear:**
 
-  - Jupyter Notebook ("Notebook.ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
+  - Jupyter Notebook ("Notebook_proyecto().ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
   - Un archivo CSV ("dataset.csv") que contiene los datos que vamos a analizar.
 
 **Resultado esperado:**
 
-Análisis efectivo de regresión lineal que permita comprender cómo la variable independiente influye en la variable dependiente. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
+Análisis efectivo de regresión lineal (simple y múltiple) que permita comprender cómo la/s variable/s independiente/s influye/n en la variable dependiente. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
 
 ***
 
@@ -151,4 +153,11 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 *Esta función muestra el gráfico generado en la pantalla.*
 
 //img-grafica
-    
+
+***
+
+## ML-LinearRegression-2proyecto
+
+diagrama
+
+### 2proyecto.ipynb
