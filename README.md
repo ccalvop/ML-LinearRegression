@@ -35,8 +35,9 @@ Análisis efectivo de regresión lineal (simple o múltiple) que permita compren
 
 ***
 
-**Preparacion del entorno Jupyter Notebook  
-Pasos a seguir:**
+### <p align="center">Preparacion del entorno Jupyter Notebook</p>
+
+Pasos a seguir:
 
   - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression". Copiaremos el archivo "dataset" **archivo.csv** en este directorio.
   
