@@ -4,13 +4,13 @@
 
 *La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
-**Proyectos:**
+### Proyectos:
 
-Regresión lineal simple:     ML-LinearRegression-**StudentStudyHours**  
-*Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
+**Regresión lineal simple**:  
+ML-LinearRegression-**StudentStudyHours** *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
 
-Regresión lineal multiple:   ML-LinearRegression-**LifeExpectancy**  
-*Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
+**Regresión lineal multiple**:  
+ML-LinearRegression-**LifeExpectancy** *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
 
 **Objetivo:**
 
