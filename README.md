@@ -9,10 +9,10 @@
 #### <p align="center">Proyectos</p>
 
 **Regresión lineal simple**:  
-ML-LinearRegression-**StudentStudyHours**.*Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
+ML-LinearRegression-**StudentStudyHours**. *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
 
 **Regresión lineal multiple**:  
-ML-LinearRegression-**LifeExpectancy**.*Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
+ML-LinearRegression-**LifeExpectancy**. *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
 
 ***
 
