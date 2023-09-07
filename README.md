@@ -6,25 +6,23 @@
 
 **Proyectos:**
 
-Regresión lineal simple  
-ML-LinearRegression-**StudentStudyHours**  
+<ins>Regresión lineal simple<ins>:     ML-LinearRegression-**StudentStudyHours**  
 *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
 
-Regresión lineal multiple  
-ML-LinearRegression-**LifeExpectancy**  
+<ins>Regresión lineal multiple<ins>:   ML-LinearRegression-**LifeExpectancy**  
 *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
 
 **Objetivo:**
 
-Emplearemos la regresión lineal simple para analizar la conexión entre una variable independiente y una variable dependiente. El objetivo es comprender de qué manera las predicciones se ven influenciadas por variaciones en la variable de entrada.
+Emplearemos la regresión lineal simple y múltiple para analizar la conexión entre una o varias variables independientes y una variable dependiente. El objetivo es comprender de qué manera las predicciones se ven influenciadas por variaciones en la/s variable/s de entrada.
 
 **Software y recursos utilizados:**
 
   - Python:
       con la librería NumPy para analizar los datos e implementar la regresión lineal.
       con la librería Matplotlib para la creación de gráficos.
-  - Jupyter Notebook para la creación y documentación del análisis.
-  - Conjunto de datos "Dataset" en formato CSV obtenidos de sitios web como Kaggle o similar.
+  - Jupyter Notebook para la creación y documentación del análisis (documento interactivo).
+  - Conjunto de datos o "Dataset" en formato CSV obtenidos de sitios web como Kaggle o similar.
 
 **Archivos y código a crear:**
 
@@ -33,7 +31,7 @@ Emplearemos la regresión lineal simple para analizar la conexión entre una var
 
 **Resultado esperado:**
 
-Análisis efectivo de regresión lineal (simple y múltiple) que permita comprender cómo la/s variable/s independiente/s influye/n en la variable dependiente. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
+Análisis efectivo de regresión lineal (simple o múltiple) que permita comprender cómo la/s variable/s independiente/s influye/n en la variable dependiente. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
 
 ***
 
