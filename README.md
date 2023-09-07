@@ -5,38 +5,43 @@
 ***¿Qué es la regresión lineal?***  
 *La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetado en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (en dimensiones superiores) que mejor se ajusta a los datos para realizar estas predicciones. Existen variantes de regresión lineal, como la *regresión lineal simple* (cuando hay una sola característica de entrada y la que vamos a utilizar en este ejemplo), y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
-### ML-LinearRegression-StudentStudyHours
+**Proyectos:**
 
-![diagram](https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95)
+ML-LinearRegression-**StudentStudyHours**  
+*Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
+
+ML-LinearREgression-**2proyecto**  
+*Este proyecto plantea analizar la relación entre...*
 
 **Objetivo:**
 
-Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Utilizaremos la regresión lineal simple para comprender cómo la cantidad de tiempo que un estudiante dedica al estudio influye en sus resultados académicos.
+Emplearemos la regresión lineal simple para analizar la conexión entre una variable independiente y una variable dependiente. El objetivo es comprender de qué manera las predicciones se ven influenciadas por variaciones en la variable de entrada.
 
-**Software utilizados:**
+**Software y recursos utilizados:**
 
   - Python:
-      con la librería NumPy para implementar la regresión lineal).
+      con la librería NumPy para analizar los datos e implementar la regresión lineal.
       con la librería Matplotlib para la creación de gráficos.
   - Jupyter Notebook para la creación y documentación del análisis.
-  - Conjunto de datos "Student Study Hours" en formato CSV obtenidos de Kaggle (score.csv).
+  - Conjunto de datos "Dataset" en formato CSV obtenidos de sitios web como Kaggle o similar.
 
 **Archivos y código a crear:**
 
-  - Jupyter Notebook ("Student_Study_Hours_Analysis.ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
-  - Un archivo CSV ("student_study_data.csv") que contiene los datos de las horas de estudio y las calificaciones de los estudiantes.
+  - Jupyter Notebook ("Notebook.ipynb") que incluya el análisis exploratorio de datos, la implementación de la regresión lineal y la visualización de resultados.
+  - Un archivo CSV ("dataset.csv") que contiene los datos que vamos a analizar.
 
 **Resultado esperado:**
 
-Análisis efectivo de regresión lineal que permita comprender cómo las horas de estudio de los estudiantes se relacionan con sus calificaciones. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
+Análisis efectivo de regresión lineal que permita comprender cómo la variable independiente influye en la variable dependiente. Esto incluirá visualizaciones de datos, la evaluación del modelo de regresión y conclusiones sobre la relación entre estas variables.
 
 ***
 
-**Pasos a seguir:**
+**Preparacion del entorno Jupyter Notebook  
+Pasos a seguir:**
 
-  - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression". Copiamos el archivo "dataset" **score.csv** en este directorio.
+  - Crear un directorio o carpeta donde trabajaremos, por ejemplo "C:\ml\01_linear_regression". Copiaremos el archivo "dataset" **archivo.csv** en este directorio.
   
-  - **Crear un nuevo notebook con Jupyter Notebook**:
+  - **Crear un notebook con Jupyter Notebook**:
 
     ***¿Qué es un notebook? ¿y Jupyter Notebook?***
     (*)Los notebooks son documentos interactivos en los que podemos integrar texto, código ejecutable, así como, tablas o figuras.
@@ -49,7 +54,7 @@ Análisis efectivo de regresión lineal que permita comprender cómo las horas d
 Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Docker**: 
 *La razón principal para ejecutar Jupyter Notebook desde un contenedor Docker en lugar de instalarlo directamente en Windows (o en otros sistemas) está relacionada con la gestión de entornos y dependencias. El uso de contenedores Docker es una práctica común en el desarrollo de software y análisis de datos, ya que proporciona un entorno controlado y aislado que facilita la gestión de dependencias y la portabilidad de proyectos.*
 
-    (Teniendo Docker instalado) Abrimos Docker. En Windows: "Docker Desktop".
+    (Teniendo Docker instalado) Abrimos Docker. En Windows: abrimos el programa "Docker Desktop".
 
     //img captura windows programs docker desktop
       
@@ -73,17 +78,21 @@ Podemos usar Jupyter Notebook instalandolo en Windows o desde un **contenedor Do
 
     **"jupyter/scipy-notebook"** Esto es el nombre de la imagen de Docker que se utilizará para crear el contenedor. jupyter/scipy-notebook es una imagen oficial de Jupyter Notebook que incluye bibliotecas científicas de Python.
 
-  - Podemos observar en Docker Desktop que la imagen del contenedor está descargada y en uso, y que el contenedor está corriendo:
+  - Podemos observar en Docker Desktop que la imagen del contenedor se ha descargado y está en uso, y que el contenedor está corriendo (running):
 
     ///img captura docker desktop
 
-  - En la terminal, verás un enlace que comienza con "\http://127.0.0.1:8888/?token=...". Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
+  - En la terminal, verás un enlace que comienza con *http: //127.0.0.1:8888/?token=...* Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
   - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Student_Study_Hours_Analysis.ipynb".
 
 ***
 
-Student_Study_Hours_Analysis.ipynb
+## ML-LinearRegression-StudentStudyHours
+
+![diagram](https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95)
+
+### Student_Study_Hours_Analysis.ipynb
 
 //CARBON-code  
 #imports
