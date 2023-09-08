@@ -156,6 +156,37 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 
 //img-grafica
 
+//CARBON-code
+#Hyperparameters
+learning_rate = 0.0001
+initial_b = 0
+initial_m = 0
+num_iterations = 10
+//CARBON-code
+
+Los hiperparámetros son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
+
+**learning_rate**: La tasa de aprendizaje determina qué tan grande es el paso que se toma en la dirección del gradiente.
+
+**initial_b e initial_m**: Son los valores iniciales para los coeficientes de la regresión.
+
+**num_iterations:** Indica el número de iteraciones de entrenamiento.
+
+*En el repositorio **()** podemos ver otro ejemplo de aprendizaje supervisado: XGBoost. Los hiperparámetros que se han configurado en el ejemplo de XGBoost son específicos de ese algoritmo. Cada algoritmo tiene sus propios hiperparámetros, y estos pueden tener nombres diferentes y servir para propósitos distintos.*  
+*(XGBoost es un algoritmo de aprendizaje automático supervisado que se utiliza para tareas de clasificación y regresión. El nombre "XGBoost" proviene de "eXtreme Gradient Boosting". Es una implementación eficiente y escalable de árboles de decisión potenciados por gradiente. Este algoritmo tiene sus propios hiperparámetros que son relevantes para su funcionamiento óptimo. max_depth: Controla la profundidad máxima de los árboles. eta: Es el learning rate, que determina cuánto se ajustan los pesos del modelo en cada iteración. gamma: Parámetro que controla la ganancia mínima necesaria para hacer una partición adicional en un nodo hoja del árbol. min_child_weight: Es el mínimo peso necesario de una hoja del árbol. subsample: Controla la fracción de las instancias que se utilizarán para entrenar cada árbol. objective: Define el objetivo del aprendizaje (en este caso, binary:logistic indica una tarea de clasificación binaria). num_round: Indica el número de iteraciones de entrenamiento.)*
+
+#Hyperparameters
+**learning_rate**  
+Este es un hiperparámetro que controla el tamaño de los pasos que el algoritmo de optimización toma durante el entrenamiento. Un valor más bajo hace que los pasos sean más pequeños, lo que puede conducir a una convergencia más precisa, pero también puede hacer que el entrenamiento sea más lento. Un valor demasiado alto puede hacer que el entrenamiento diverja o salte sobre el mínimo óptimo.  
+> 0.0001 (valor muy pequeño) Indica un ajuste muy conservador.  
+**initial_b**  
+Este es el valor inicial del término independiente (también conocido como sesgo o intercept). En una regresión lineal, es el valor de y cuando x es 0. Al inicio del entrenamiento, el modelo utiliza este valor como punto de partida.  
+**initial_m**  
+Este es el valor inicial de la pendiente de la línea. Representa la tasa de cambio de la variable dependiente respecto a la independiente. Al igual que initial_b, este valor se utiliza como punto de partida en el entrenamiento.  
+> 0 Inicializarlo en 0 significa que al principio no hay pendiente.  
+**num_iterations** Este hiperparámetro determina cuántas veces el algoritmo de entrenamiento recorre todo el conjunto de datos de entrenamiento para ajustar los parámetros del modelo. Cada pasada a través del conjunto de datos se conoce como una iteración. Un número mayor de iteraciones puede permitir que el modelo converja mejor, pero también puede aumentar el tiempo de entrenamiento.
+
+
 ***
 
 ## ML-LinearRegression-LifeExpectancy
