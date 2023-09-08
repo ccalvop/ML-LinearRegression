@@ -60,7 +60,7 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
     (Teniendo Docker instalado) Abrimos Docker. En Windows: abrimos el programa "Docker Desktop".
 
-    //img captura windows programs docker desktop
+    >>>/img captura windows programs docker desktop
       
   - *(En Windows, teniendo el programa "Docker Desktop" iniciado)* Abrimos una **terminal** y ejecutamos el comando:
 
@@ -68,9 +68,10 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
     Si no tuvieramos la imagen del contendedor **jupyter/scipy-notebook** descargada, Docker la descargará primero:
 
-    ///CARBON-code
+    >>>/CARBON-code
     *Unable to find image 'jupyter/scipy-notebook:latest' locally
     latest: Pulling from jupyter/scipy-notebook*
+    >>>/CARBON-code
 
     **"docker run"** Comando para ejecutar un contenedor Docker a partir de una imagen (descargada previamente). Estamos iniciando un contenedor de Jupyter Notebook.
 
@@ -84,7 +85,7 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
   - Podemos observar en Docker Desktop que la imagen del contenedor se ha descargado y está en uso, y que el contenedor está corriendo (running):
 
-    ///img captura docker desktop
+    >>>/img captura docker desktop
 
   - En la terminal, verás un enlace que comienza con *http: //127.0.0.1:8888/?token=...* Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
@@ -98,14 +99,14 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
 ### Student_Study_Hours_Analysis.ipynb
 
-//CARBON-code  
+>>>/CARBON-code  
 #imports
 from numpy import *
 import matplotlib.pyplot as plt
 
 #magic command
 %matplotlib inline  
-//CARBON-code
+>>>/CARBON-code
 
 **from numpy import \***   
 Numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
@@ -116,7 +117,7 @@ Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones,
 **%matplotlib inline**  
 Es una "comando mágico" en Jupyter Notebook que permite que las gráficas generadas con Matplotlib se muestren directamente en la salida del cuaderno, en lugar de abrirse en una ventana emergente separada
 
-//CARBON-code
+>>>/CARBON-code
 #Load data
 points = genfromtxt('score.csv', delimiter=',')
 
@@ -130,7 +131,7 @@ plt.xlabel('Horas de estudio')
 plt.ylabel('Resultados de examenes')
 plt.title('Dataset')
 plt.show()
-//CARBON-code
+>>>/CARBON-code
 
 #Load data  
 **points = genfromtxt('score.csv', delimiter=',')**  
@@ -156,13 +157,13 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 
 //img-grafica
 
-//CARBON-code
+>>>/CARBON-code
 #Hyperparameters
 learning_rate = 0.0001
 initial_b = 0
 initial_m = 0
 num_iterations = 10
-//CARBON-code
+>>>/CARBON-code
 
 Los hiperparámetros son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
 
@@ -195,4 +196,4 @@ diagrama
 
 ### Life_Expectancy_Analysis.ipynb
 
-//CARBON-code
+>>>/CARBON-code
