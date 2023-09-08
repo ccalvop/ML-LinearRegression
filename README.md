@@ -179,14 +179,13 @@ Los hiperparámetros son configuraciones que afectan el proceso de entrenamiento
 #Hyperparameters
 **learning_rate**  
 Este es un hiperparámetro que controla el tamaño de los pasos que el algoritmo de optimización toma durante el entrenamiento. Un valor más bajo hace que los pasos sean más pequeños, lo que puede conducir a una convergencia más precisa, pero también puede hacer que el entrenamiento sea más lento. Un valor demasiado alto puede hacer que el entrenamiento diverja o salte sobre el mínimo óptimo.  
-> 0.0001 (valor muy pequeño) Indica un ajuste muy conservador.  
+0.0001 (valor muy pequeño) Indica un ajuste muy conservador.  
 **initial_b**  
 Este es el valor inicial del término independiente (también conocido como sesgo o intercept). En una regresión lineal, es el valor de y cuando x es 0. Al inicio del entrenamiento, el modelo utiliza este valor como punto de partida.  
 **initial_m**  
 Este es el valor inicial de la pendiente de la línea. Representa la tasa de cambio de la variable dependiente respecto a la independiente. Al igual que initial_b, este valor se utiliza como punto de partida en el entrenamiento.  
-> 0 Inicializarlo en 0 significa que al principio no hay pendiente.  
+0 Inicializarlo en 0 significa que al principio no hay pendiente.  
 **num_iterations** Este hiperparámetro determina cuántas veces el algoritmo de entrenamiento recorre todo el conjunto de datos de entrenamiento para ajustar los parámetros del modelo. Cada pasada a través del conjunto de datos se conoce como una iteración. Un número mayor de iteraciones puede permitir que el modelo converja mejor, pero también puede aumentar el tiempo de entrenamiento.
-
 
 ***
 
