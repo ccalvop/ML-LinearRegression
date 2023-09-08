@@ -265,7 +265,7 @@ Implementa el algoritmo de descenso de gradiente (Gradient Descent) para encontr
 
 "Optimizar" significa encontrar los valores de los parámetros (en este caso b y m) que minimizan una función de costo específica. El objetivo es ajustar el modelo para que se ajuste lo mejor posible a los datos de entrenamiento.
 
-**def run_gradient_descent**  
+#### def run_gradient_descent 
 *Esta función realiza el proceso de descenso de gradiente, actualizando los parámetros b y m en cada iteración y registrando el historial de costos. Al final, devuelve los valores finales de b y m junto con el historial de costos.*
 
 **b = initial_b  
@@ -282,7 +282,7 @@ m = initial_m**
 **return [b, m, cost_history]**  
 *Se devuelven los valores finales de b y m, junto con el historial de costos.*  
 
-**def calculate_gradients**  
+#### def calculate_gradients 
 *Esta función calcula los gradientes que guían el proceso de optimización.*
 
 **m_gradient = 0  
@@ -318,7 +318,12 @@ print('Minimized cost:', minimized_cost)
 **b, m, cost_graph = run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations)**  
 *Llamamos a la función **run_gradient_descent** con los argumentos especificados (points, initial_b, initial_m, learning_rate y num_iterations). Devuelve los valores optimizados de b y m, así como una lista de valores de costo a lo largo de las iteraciones que se almacena en cost_graph.*  
 *"b, m, cost_graph =" Desempaquetado de tuplas. Cuando una función devuelve múltiples valores, pueden ser asignados directamente a múltiples variables en una sola línea de código. Esto significa que b tomará el primer valor que la función devuelve, m tomará el segundo valor y cost_graph tomará el tercero.*  
-
+**print('Optimized b:', b)  
+print('Optimized m:', m)**  
+*Imprime los valores optimizados de b y m*  
+**minimized_cost = compute_cost(b, m, points)  
+print('Minimized cost:', minimized_cost)**  
+*Variable minimized_cost para almacenar el resultado del cálculo del costo minimizado. Se imprime el costo minimizado (error) asociado con los parámetros optimizados*
 
 ***
 
