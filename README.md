@@ -117,7 +117,7 @@ Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones,
 **%matplotlib inline**  
 Es una "comando mágico" en Jupyter Notebook que permite que las gráficas generadas con Matplotlib se muestren directamente en la salida del cuaderno, en lugar de abrirse en una ventana emergente separada
 
->>>/CARBON-code
+...
 #Load data
 points = genfromtxt('score.csv', delimiter=',')
 
@@ -131,7 +131,7 @@ plt.xlabel('Horas de estudio')
 plt.ylabel('Resultados de examenes')
 plt.title('Dataset')
 plt.show()
->>>/CARBON-code
+...
 
 #Load data  
 **points = genfromtxt('score.csv', delimiter=',')**  
