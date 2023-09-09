@@ -346,7 +346,8 @@ Visualizamos cómo la función de costo **disminuye** a medida que el algoritmo 
 ...  
 img grafica
 
-La curva se aplana a partir de x iteraciones, lo que indica que el algoritmo converge a una solución. Entonces podriamos reducir el número de iteraciones sin afectar significativamente la precisión del modelo. Esto sería una optimización importante, ya que menos iteraciones significan un tiempo de entrenamiento más corto. (*)Probaremos diferentes hiperparámetros y sus resultados.
+La curva se aplana a partir de x iteraciones, lo que indica que el algoritmo converge a una solución. Entonces podriamos reducir el número de iteraciones sin afectar significativamente la precisión del modelo. Esto sería una optimización importante, ya que menos iteraciones significan un tiempo de entrenamiento más corto.  
+(*)Probaremos diferentes hiperparámetros y sus resultados después de visualizar la regresión final obtenida.
 
 ### Ahora visualizaremos los resultados del modelo de regresión lineal una vez que ha sido entrenado.
 
