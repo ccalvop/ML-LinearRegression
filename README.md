@@ -101,14 +101,14 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
 ### Student_Study_Hours_Analysis.ipynb
 
-...    
+```python
 #imports
 from numpy import *
 import matplotlib.pyplot as plt
 
 #magic command
-%matplotlib inline  
-...
+%matplotlib inline
+```
 
 **from numpy import \***   
 Numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
@@ -119,7 +119,7 @@ Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones,
 **%matplotlib inline**  
 Es una "comando mágico" en Jupyter Notebook que permite que las gráficas generadas con Matplotlib se muestren directamente en la salida del cuaderno, en lugar de abrirse en una ventana emergente separada
 
-...  
+```python
 #Load data
 points = genfromtxt('score.csv', delimiter=',')
 
@@ -132,8 +132,8 @@ plt.scatter(x,y)
 plt.xlabel('Horas de estudio')
 plt.ylabel('Resultados de examenes')
 plt.title('Dataset')
-plt.show()  
-...
+plt.show()
+```
 
 #Load data  
 **points = genfromtxt('score.csv', delimiter=',')**  
