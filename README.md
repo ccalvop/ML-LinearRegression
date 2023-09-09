@@ -121,11 +121,11 @@ Es una "comando mágico" en Jupyter Notebook que permite que las gráficas gener
 
 ```python
 #Load data
-points = genfromtxt('score.csv', delimiter=',')
+points = np.genfromtxt('score.csv', delimiter=',')
 
 #Extract columns
-x = array(points[:,0])
-y = array(points[:,1])
+x = np.array(points[:,0])
+y = np.array(points[:,1])
 
 #Plot the dataset
 plt.scatter(x,y)
@@ -160,15 +160,15 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 ...  
 img-grafica
 
-...  
+```python
 #Hyperparameters
 learning_rate = 0.01
 initial_b = 0
 initial_m = 0
-num_iterations = 50  
-...
+num_iterations = 50
+```
 
-Los hiperparámetros son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
+Los **hiperparámetros** son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
 
 **learning_rate**: La tasa de aprendizaje determina qué tan grande es el paso que se toma en la dirección del gradiente.
 
@@ -192,7 +192,7 @@ Este es el valor inicial de la pendiente de la línea. Representa la tasa de cam
 **num_iterations** Este hiperparámetro determina cuántas veces el algoritmo de entrenamiento recorre todo el conjunto de datos de entrenamiento para ajustar los parámetros del modelo. Cada pasada a través del conjunto de datos se conoce como una iteración. Un número mayor de iteraciones puede permitir que el modelo converja mejor, pero también puede aumentar el tiempo de entrenamiento.  
 *Un valor de 50. El modelo debería converger relativamente rápido. Es importante monitorear la curva de aprendizaje para asegurarse de que el modelo no esté sobreajustando o subajustando los datos.*  
 
-...  
+```python
 #Cost function 
 def compute_cost(b, m, points):
     total_cost = 0
@@ -205,8 +205,8 @@ def compute_cost(b, m, points):
     total_cost = np.sum((y - (m * x + b)) ** 2)
     
     # Return average of squared error
-    return total_cost / len(points)  
-...
+    return total_cost / len(points)
+```
 
 La función **compute_cost** tiene como propósito calcular el costo o la pérdida del modelo en función de los parámetros b (independiente) y m (pendiente). El objetivo del entrenamiento es encontrar los valores de b y m que minimizan este costo. La función de costo (o función de pérdida) en el contexto de la regresión lineal es una medida de cuánto se desvían las predicciones del modelo de los valores reales. En una regresión lineal, la función de costo comúnmente utilizada es el error cuadrático medio (MSE, por sus siglas en inglés). El objetivo del entrenamiento es minimizar esta función.
 
@@ -224,7 +224,7 @@ Entonces, en esta línea, se está calculando el MSE entre las predicciones (m *
 **return total_cost / len(points)**  
 *Devuelve el costo promedio, que es el costo total dividido por el número de puntos. Esto proporciona una medida del error promedio del modelo.*
 
-...  
+```python
 def run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations):
     # Initialize the intercept and slope parameters
     b = initial_b
@@ -237,8 +237,8 @@ def run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterat
         # Calculate the current cost and append it to the history
         cost_history.append(calculate_cost(b, m, points))
         
-        # Update the parameters using the update function
-        b, m = update_parameters(b, m, np.array(points), learning_rate)
+        # Update the parameters using the calculate_gradients function
+        b, m = calculate_gradients(b, m, np.array(points), learning_rate)
 
     # Return the final values of b and m, along with the cost history
     return [b, m, cost_history]
@@ -261,12 +261,12 @@ def calculate_gradients(b_current, m_current, points, learning_rate):
     b_updated = b_current - learning_rate * b_gradient
 
     # Return updated parameters
-    return b_updated, m_updated  
-...
+    return b_updated, m_updated
+```
 
-Implementa el algoritmo de descenso de gradiente (Gradient Descent) para encontrar los parámetros óptimos b y m de la regresión lineal. Gradient Descent es el algoritmo de optimización utilizado para minimizar la función de costo. Básicamente, busca el mínimo de la función moviéndose en la dirección del gradiente negativo. Esto implica ajustar los parámetros del modelo (pendiente y término independiente) iterativamente. Se define una función para calcular el gradiente (derivadas parciales) de la función de costo respecto a los parámetros, y otra función para actualizar los parámetros con el gradiente y una tasa de aprendizaje (learning rate).
+Aquí implementamos el algoritmo de descenso de gradiente (Gradient Descent) para encontrar los parámetros óptimos b y m de la regresión lineal. Gradient Descent es el algoritmo de optimización utilizado para minimizar la función de costo. Básicamente, busca el mínimo de la función moviéndose en la dirección del gradiente negativo. Esto implica ajustar los parámetros del modelo (pendiente y término independiente) iterativamente. Se define una función para calcular el gradiente (derivadas parciales) de la función de costo respecto a los parámetros, y otra función para actualizar los parámetros con el gradiente y una tasa de aprendizaje (learning rate).
 
-"Optimizar" significa encontrar los valores de los parámetros (en este caso b y m) que minimizan una función de costo específica. El objetivo es ajustar el modelo para que se ajuste lo mejor posible a los datos de entrenamiento.
+*"Optimizar"* significa encontrar los valores de los parámetros (en este caso b y m) que minimizan una función de costo específica. El objetivo es ajustar el modelo para que se ajuste lo mejor posible a los datos de entrenamiento.
 
 #### def run_gradient_descent 
 *Esta función realiza el proceso de descenso de gradiente, actualizando los parámetros b y m en cada iteración y registrando el historial de costos. Al final, devuelve los valores finales de b y m junto con el historial de costos.*
@@ -305,7 +305,7 @@ b_updated = b_current - learning_rate * b_gradient**
 
 **Una vez definidas las funciones, ejecutaremos el proceso de descenso de gradiente para obtener los parámetros optimizados b y m que minimizan la función de costo. Luego imprimiremos estos valores optimizados y el error asociado.**
 
-...  
+```python
 #Running run_gradient_descent() to get optimized parameters b and m
 b, m, cost_graph = run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations)
 
@@ -316,14 +316,16 @@ print('Optimized m:', m)
 #Print error with optimized parameters
 minimized_cost = compute_cost(b, m, points)
 print('Minimized cost:', minimized_cost)
-...  
+``` 
 
 **b, m, cost_graph = run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations)**  
 *Llamamos a la función **run_gradient_descent** con los argumentos especificados (points, initial_b, initial_m, learning_rate y num_iterations). Devuelve los valores optimizados de b y m, así como una lista de valores de costo a lo largo de las iteraciones que se almacena en cost_graph.*  
 *"b, m, cost_graph =" Desempaquetado de tuplas. Cuando una función devuelve múltiples valores, pueden ser asignados directamente a múltiples variables en una sola línea de código. Esto significa que b tomará el primer valor que la función devuelve, m tomará el segundo valor y cost_graph tomará el tercero.*  
+
 **print('Optimized b:', b)  
 print('Optimized m:', m)**  
 *Imprime los valores optimizados de b y m*  
+
 **minimized_cost = compute_cost(b, m, points)  
 print('Minimized cost:', minimized_cost)**  
 *Variable minimized_cost para almacenar el resultado del cálculo del costo minimizado. Se imprime el costo minimizado (error) asociado con los parámetros optimizados*
