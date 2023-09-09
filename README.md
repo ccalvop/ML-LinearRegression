@@ -60,7 +60,8 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
     (Teniendo Docker instalado) Abrimos Docker. En Windows: abrimos el programa "Docker Desktop".
 
-    >>>/img captura windows programs docker desktop
+    ...  
+    img captura windows programs docker desktop
       
   - *(En Windows, teniendo el programa "Docker Desktop" iniciado)* Abrimos una **terminal** y ejecutamos el comando:
 
@@ -68,10 +69,10 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
     Si no tuvieramos la imagen del contendedor **jupyter/scipy-notebook** descargada, Docker la descargará primero:
 
-    >>>/CARBON-code
+    ...  
     *Unable to find image 'jupyter/scipy-notebook:latest' locally
-    latest: Pulling from jupyter/scipy-notebook*
-    >>>/CARBON-code
+    latest: Pulling from jupyter/scipy-notebook*  
+    ...
 
     **"docker run"** Comando para ejecutar un contenedor Docker a partir de una imagen (descargada previamente). Estamos iniciando un contenedor de Jupyter Notebook.
 
@@ -85,7 +86,8 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
   - Podemos observar en Docker Desktop que la imagen del contenedor se ha descargado y está en uso, y que el contenedor está corriendo (running):
 
-    >>>/img captura docker desktop
+    ...img
+    captura docker desktop
 
   - En la terminal, verás un enlace que comienza con *http: //127.0.0.1:8888/?token=...* Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
@@ -99,14 +101,14 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
 ### Student_Study_Hours_Analysis.ipynb
 
->>>/CARBON-code  
+...    
 #imports
 from numpy import *
 import matplotlib.pyplot as plt
 
 #magic command
 %matplotlib inline  
->>>/CARBON-code
+...
 
 **from numpy import \***   
 Numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
@@ -117,7 +119,7 @@ Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones,
 **%matplotlib inline**  
 Es una "comando mágico" en Jupyter Notebook que permite que las gráficas generadas con Matplotlib se muestren directamente en la salida del cuaderno, en lugar de abrirse en una ventana emergente separada
 
-...
+...  
 #Load data
 points = genfromtxt('score.csv', delimiter=',')
 
@@ -130,7 +132,7 @@ plt.scatter(x,y)
 plt.xlabel('Horas de estudio')
 plt.ylabel('Resultados de examenes')
 plt.title('Dataset')
-plt.show()
+plt.show()  
 ...
 
 #Load data  
@@ -155,15 +157,16 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 **plt.show()**  
 *Esta función muestra el gráfico generado en la pantalla.*
 
-//img-grafica
+...  
+img-grafica
 
->>>/CARBON-code
+...  
 #Hyperparameters
 learning_rate = 0.01
 initial_b = 0
 initial_m = 0
-num_iterations = 50
->>>/CARBON-code
+num_iterations = 50  
+...
 
 Los hiperparámetros son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
 
@@ -189,7 +192,7 @@ Este es el valor inicial de la pendiente de la línea. Representa la tasa de cam
 **num_iterations** Este hiperparámetro determina cuántas veces el algoritmo de entrenamiento recorre todo el conjunto de datos de entrenamiento para ajustar los parámetros del modelo. Cada pasada a través del conjunto de datos se conoce como una iteración. Un número mayor de iteraciones puede permitir que el modelo converja mejor, pero también puede aumentar el tiempo de entrenamiento.  
 *Un valor de 50. El modelo debería converger relativamente rápido. Es importante monitorear la curva de aprendizaje para asegurarse de que el modelo no esté sobreajustando o subajustando los datos.*  
 
->>>/CARBON-code
+...  
 #Cost function 
 def compute_cost(b, m, points):
     total_cost = 0
@@ -202,8 +205,8 @@ def compute_cost(b, m, points):
     total_cost = np.sum((y - (m * x + b)) ** 2)
     
     # Return average of squared error
-    return total_cost / len(points)
->>>/CARBON-code
+    return total_cost / len(points)  
+...
 
 La función **compute_cost** tiene como propósito calcular el costo o la pérdida del modelo en función de los parámetros b (independiente) y m (pendiente). El objetivo del entrenamiento es encontrar los valores de b y m que minimizan este costo. La función de costo (o función de pérdida) en el contexto de la regresión lineal es una medida de cuánto se desvían las predicciones del modelo de los valores reales. En una regresión lineal, la función de costo comúnmente utilizada es el error cuadrático medio (MSE, por sus siglas en inglés). El objetivo del entrenamiento es minimizar esta función.
 
@@ -221,7 +224,7 @@ Entonces, en esta línea, se está calculando el MSE entre las predicciones (m *
 **return total_cost / len(points)**  
 *Devuelve el costo promedio, que es el costo total dividido por el número de puntos. Esto proporciona una medida del error promedio del modelo.*
 
->>>/CARBON-code
+...  
 def run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations):
     # Initialize the intercept and slope parameters
     b = initial_b
@@ -258,8 +261,8 @@ def calculate_gradients(b_current, m_current, points, learning_rate):
     b_updated = b_current - learning_rate * b_gradient
 
     # Return updated parameters
-    return b_updated, m_updated
->>>/CARBON-code
+    return b_updated, m_updated  
+...
 
 Implementa el algoritmo de descenso de gradiente (Gradient Descent) para encontrar los parámetros óptimos b y m de la regresión lineal. Gradient Descent es el algoritmo de optimización utilizado para minimizar la función de costo. Básicamente, busca el mínimo de la función moviéndose en la dirección del gradiente negativo. Esto implica ajustar los parámetros del modelo (pendiente y término independiente) iterativamente. Se define una función para calcular el gradiente (derivadas parciales) de la función de costo respecto a los parámetros, y otra función para actualizar los parámetros con el gradiente y una tasa de aprendizaje (learning rate).
 
@@ -302,7 +305,7 @@ b_updated = b_current - learning_rate * b_gradient**
 
 **Una vez definidas las funciones, ejecutaremos el proceso de descenso de gradiente para obtener los parámetros optimizados b y m que minimizan la función de costo. Luego imprimiremos estos valores optimizados y el error asociado.**
 
->>>/CARBON-code
+...  
 #Running run_gradient_descent() to get optimized parameters b and m
 b, m, cost_graph = run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations)
 
@@ -313,7 +316,7 @@ print('Optimized m:', m)
 #Print error with optimized parameters
 minimized_cost = compute_cost(b, m, points)
 print('Minimized cost:', minimized_cost)
->>>/CARBON-code
+...  
 
 **b, m, cost_graph = run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterations)**  
 *Llamamos a la función **run_gradient_descent** con los argumentos especificados (points, initial_b, initial_m, learning_rate y num_iterations). Devuelve los valores optimizados de b y m, así como una lista de valores de costo a lo largo de las iteraciones que se almacena en cost_graph.*  
