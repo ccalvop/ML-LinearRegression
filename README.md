@@ -57,6 +57,11 @@ Pasos a seguir:
 
 Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerlo funcionar desde un **contenedor Docker**: 
 *La razón principal para ejecutar Jupyter Notebook desde un contenedor Docker en lugar de instalarlo localmente está relacionada con la gestión de entornos y dependencias. El uso de contenedores Docker es una práctica común en el desarrollo de software y análisis de datos, ya que proporciona un entorno controlado y aislado (con las dependencias y librerias ya instaladas).*
+
+  - Ejecutamos **Docker**. En Windows: abrimos el programa "Docker Desktop".
+
+    ...
+    img captura windows programs docker desktop
       
   - *(En Windows, teniendo el programa "Docker Desktop" iniciado)* Abrimos una **terminal** y ejecutamos el comando:
 
