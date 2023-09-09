@@ -4,12 +4,12 @@
 
 <p align="center">La regresión lineal es una herramienta útil para predecir una respuesta cuantitativa</p>
 
-*La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetados, en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (para dimensiones superiores a 2D) que mejor se ajusta a los datos para realizar estas predicciones. Existen dos variantes de regresión lineal, la *regresión lineal simple* (cuando hay una sola característica de entrada) y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
+*La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetados, en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (para dimensiones superiores a 2) que mejor se ajusta a los datos para realizar estas predicciones. Existen dos variantes de regresión lineal, la *regresión lineal simple* (cuando hay una sola característica de entrada) y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
 #### <p align="center">Proyectos</p>
 
 **Regresión lineal simple**:  
-ML-LinearRegression-**StudentStudyHours**. *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
+ML-LinearRegression-**StudentStudyHours**. *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Un ejemplo típico para implenetar la regresión lineal*
 
 **Regresión lineal multiple**:  
 ML-LinearRegression-**LifeExpectancy**. *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
