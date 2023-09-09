@@ -155,7 +155,7 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 **plt.title('Dataset')**  
 *Agrega un título al gráfico.*  
 **plt.show()**  
-*Esta función muestra el gráfico generado en la pantalla.*
+*Esta función muestra el gráfico generadolo en la pantalla.*
 
 ...  
 img-grafica
@@ -232,10 +232,13 @@ def run_gradient_descent(points, initial_b, initial_m, learning_rate, num_iterat
     # Loop iterating over the specified number of iterations. For each iteration, optimize b, m and compute its cost
     for i in range(num_iterations):
         # Calculate the current cost and append it to the history
-        cost_history.append(calculate_cost(b, m, points))
+        cost_history.append(compute_cost(b, m, points))
         
         # Update the parameters using the calculate_gradients function
         b, m = calculate_gradients(b, m, np.array(points), learning_rate)
+
+        # Printing values
+        print(f'Iteration {i+1}: b = {b}, m = {m}, Cost = {cost_history[-1]}')
 
     # Return the final values of b and m, along with the cost history
     return [b, m, cost_history]
@@ -247,7 +250,7 @@ def calculate_gradients(b_current, m_current, points, learning_rate):
     N = float(len(points))
 
     # Calculate Gradients
-    for i in range(len(points)):
+    for i in range(0, len(points)):
         x = points[i, 0]
         y = points[i, 1]
         m_gradient += - (2/N) * x * (y - (m_current * x + b_current))
@@ -277,8 +280,10 @@ m = initial_m**
 *Se inicia un bucle que itera sobre el número de iteraciones especificadas.*  
 **cost_history.append(calculate_cost(b, m, points))**  
 *Se calcula el costo actual utilizando la función calculate_cost con los valores actuales de b y m, y se agrega a cost_history.*  
-**b, m = update_parameters(b, m, np.array(points), learning_rate)**  
+**b, m = calculate_gradients(b, m, np.array(points), learning_rate)**  
 *Se actualizan los valores de b y m utilizando la función update_parameters.*  
+**print(f'Iteration {i+1}: b = {b}, m = {m}, Cost = {cost_history[-1]}')**  
+*Imprimimos información relevante sobre el progreso del algoritmo de descenso de gradiente en cada iteración.*  
 **return [b, m, cost_history]**  
 *Se devuelven los valores finales de b y m, junto con el historial de costos.*  
 
@@ -289,8 +294,8 @@ m = initial_m**
 b_gradient = 0  
 N = float(len(points))**  
 *Se inicializan los gradientes para m y b en cero. N se establece como el número total de puntos de datos.*  
-**for i in range(len(points))**  
-*Este bucle itera sobre cada punto de datos. x e y son las coordenadas del punto de datos actual.*  
+**for i in range(0, len(points))**  
+*Este bucle itera sobre cada punto de datos del conjunto de entrenamiento. x e y son las coordenadas del punto de datos actual.*  
 **m_gradient += - (2/N) * x * (y - (m_current * x + b_current))  
 b_gradient += - (2/N) * (y - (m_current * x + b_current))**  
 *Se calculan las derivadas parciales de la función de costo con respecto a m y b. Estas derivadas se acumulan en m_gradient y b_gradient.*  
@@ -321,18 +326,76 @@ print('Minimized cost:', minimized_cost)
 
 **print('Optimized b:', b)  
 print('Optimized m:', m)**  
-*Imprime los valores optimizados de b y m*  
+*Imprime los valores finales optimizados de b y m*  
 
 **minimized_cost = compute_cost(b, m, points)  
 print('Minimized cost:', minimized_cost)**  
 *Variable minimized_cost para almacenar el resultado del cálculo del costo minimizado. Se imprime el costo minimizado (error) asociado con los parámetros optimizados*
 
+```python
+#Plot Cost per Iteration
+plt.plot(cost_graph)
+plt.xlabel('Número de iterations')
+plt.ylabel('Costo')
+plt.title('Costo por Iteración')
+plt.show()
+```
+Con este código creamos un gráfico que muestra cómo cambia la función de costo a medida que avanzan las iteraciones del algoritmo de descenso de gradiente.  
+Visualizamos cómo la función de costo **disminuye** a medida que el algoritmo de descenso de gradiente avanza a través de las iteraciones.
+
+...  
+img grafica
+
+La curva se aplana a partir de x iteraciones, lo que indica que el algoritmo converge a una solución. Entonces podriamos reducir el número de iteraciones sin afectar significativamente la precisión del modelo. Esto sería una optimización importante, ya que menos iteraciones significan un tiempo de entrenamiento más corto. (*)Probaremos diferentes hiperparámetros y sus resultados.
+
+### Ahora visualizaremos los resultados del modelo de regresión lineal una vez que ha sido entrenado.
+
+```python
+#Plot dataset
+plt.scatter(x, y)
+#Predict y values
+pred = m * x + b
+#Plot predictions as line of best fit
+plt.title('Modelo de Regresión Lineal: Estimación de Calificaciones')
+plt.xlabel('Horas de estudio')
+plt.ylabel('Resultados de examenes')
+plt.plot(x, pred, c='r')
+plt.show()
+```
+
+**plt.scatter(x, y)**  
+*Utiliza la función scatter de Matplotlib para crear un gráfico de dispersión de los datos*  
+**pred = m * x + b**  
+*Se calculan las predicciones del modelo utilizando los parámetros optimizados m y b. Representa la mejor línea de ajuste que el modelo ha aprendido.*  
+**plt.title('Modelo de Regresión Lineal: Estimación de Calificaciones')**  
+*Se establece el título del gráfico.*  
+**plt.xlabel('Horas de estudio') y plt.ylabel('Resultados de examenes')**  
+*Estas líneas agregan etiquetas a los ejes x e y, respectivamente.*  
+**plt.plot(x, pred, c='r')**  
+*Traza la línea de mejor ajuste en el gráfico "pred". La c='r' especifica que el color de la línea será rojo ('r' red en matplotlib).  
+**plt.show()**  
+*Esta función muestra el gráfico.*  
+
+#### Diferentes hiperparámetros y sus resultados
+
+...  
+img
+
+...  
+img
+
+...  
+img
+
 ***
 
 ## ML-LinearRegression-LifeExpectancy
 
-diagrama
+...  
+diagram
 
 ### Life_Expectancy_Analysis.ipynb
 
->>>/CARBON-code
+...
+
+![underconstruction_ccalvop](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/e91be467-9c96-43ae-80cd-d387abc48bde)
