@@ -168,12 +168,9 @@ initial_m = 0
 num_iterations = 50
 ```
 
-Los **hiperparámetros** son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:
-
-**learning_rate**: La tasa de aprendizaje determina qué tan grande es el paso que se toma en la dirección del gradiente.
-
-**initial_b e initial_m**: Son los valores iniciales para los coeficientes de la regresión.
-
+Los **hiperparámetros** son configuraciones que afectan el proceso de entrenamiento del modelo. Los hiperparámetros específicos de la regresión lineal simple son:  
+**learning_rate**: La tasa de aprendizaje determina qué tan grande es el paso que se toma en la dirección del gradiente.  
+**initial_b e initial_m**: Son los valores iniciales para los coeficientes de la regresión.  
 **num_iterations:** Indica el número de iteraciones de entrenamiento.
 
 *En el repositorio **()** podemos ver otro ejemplo de aprendizaje supervisado: XGBoost. Los hiperparámetros que se han configurado en el ejemplo de XGBoost son específicos de ese algoritmo. Cada algoritmo tiene sus propios hiperparámetros, y estos pueden tener nombres diferentes y servir para propósitos distintos.*  
@@ -182,7 +179,7 @@ Los **hiperparámetros** son configuraciones que afectan el proceso de entrenami
 #Hyperparameters  
 **learning_rate**  
 Este es un hiperparámetro que controla el tamaño de los pasos que el algoritmo de optimización toma durante el entrenamiento. Un valor más bajo hace que los pasos sean más pequeños, lo que puede conducir a una convergencia más precisa, pero también puede hacer que el entrenamiento sea más lento. Un valor demasiado alto puede hacer que el entrenamiento diverja o salte sobre el mínimo óptimo.  
-*Un valor de 0.01 es bajo. Apropiado para comenzar, evita oscilaciones excesivas en el proceso de entrenamiento.*  
+*Un valor de 0.01 es bajo y apropiado para comenzar. Evita oscilaciones excesivas en el proceso de entrenamiento.*  
 **initial_b**  
 Este es el valor inicial del término independiente (también conocido como sesgo o intercept). En una regresión lineal, es el valor de y cuando x es 0. Al inicio del entrenamiento, el modelo utiliza este valor como punto de partida. 
 *Un valor de 0 representa la estimación inicial de la variable dependiente cuando todas las variables independientes son cero.*  
