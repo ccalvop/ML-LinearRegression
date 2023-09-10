@@ -1,14 +1,12 @@
-<p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression/assets/126183973/05ed8664-33d4-45f7-a990-ba713e13c179" /></p>
-
 ## <p align="center">ML-LinearRegression-StudentStudyHours</p>
 
 *Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esa recta para hacer predicciones sobre las calificaciones de los estudiantes.*
 
 Vamos a implementar dos métodos (uno manual y otro mas automatizado) para calcular la regresión lineal y poder predecir calificaciones en base a un número de horas de estudio. Además utilizaremos distintas formas de cargar, analizar y representar los datos:
 
-![diagram_copia](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/05ed8664-33d4-45f7-a990-ba713e13c179)
+<p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression/assets/126183973/05ed8664-33d4-45f7-a990-ba713e13c179" /></p>
 
-#### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
+### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
 **Carga y Exploración de Datos**:  
 Libreria Numpy.  
 **Implementación de la Regresión Lineal**:  
@@ -20,7 +18,7 @@ Calcula manualmente las predicciones utilizando los parámetros de la regresión
 
 ![diagram_caso1copia](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/01945bec-8457-47f7-a2c9-139e3a5982bc)
 
-#### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
+### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
 **Carga y Exploración de Datos**:  
 Liberias Numpy y Pandas.  
 **Implementación de la Regresión Lineal**:  
