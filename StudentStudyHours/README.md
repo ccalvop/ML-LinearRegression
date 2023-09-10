@@ -1,4 +1,4 @@
-#### <p align="center">ML-LinearRegression-StudentStudyHours</p>
+## <p align="center">ML-LinearRegression-StudentStudyHours</p>
  
 ![diagram](https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95)
 
