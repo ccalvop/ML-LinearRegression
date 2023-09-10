@@ -49,9 +49,9 @@ Pasos a seguir:
   
   - Crear un notebook con **Jupyter Notebook**:
 
-    ***¿Qué es un notebook? ¿y Jupyter Notebook?***
-    (*)Los notebooks son documentos interactivos en los que podemos integrar texto, código ejecutable, así como, tablas o figuras.
-    (**)Jupyter Notebook es una herramienta web basada en celdas que permite programar código en Python. Es un software del Proyecto Jupyter cuyo propósito es desarrollar herramientas interactivas para Data Science y computación científica
+    ***¿Qué es un notebook? ¿y Jupyter Notebook?***  
+    (*)Los notebooks son documentos interactivos en los que podemos integrar texto, código ejecutable, así como, tablas o figuras.  
+    (**)Jupyter Notebook es una herramienta web basada en celdas que permite programar código en Python. Es un software del Proyecto Jupyter cuyo propósito es desarrollar herramientas interactivas para Data Science y computación científica.  
 
     Para crear un nuevo **Jupyter Notebook** vacío que pueda abrirse correctamente, lo mejor es crearlo desde dentro del propio Jupyter Notebook. Así nos aseguraremos de que se genere un archivo .ipynb (IPythonNoteBook) con la estructura JSON adecuada y los campos necesarios para funcionar correctamente. Entonces, primero, crearemos el notebook con Jupyter.
  
