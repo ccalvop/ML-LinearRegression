@@ -65,7 +65,9 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
       
   - *(Teniendo el programa "Docker Desktop" iniciado)* Abrimos una **terminal** y ejecutamos el comando:
 
-      **"docker run -p 8888:8888 -v C:\ml\01_linear_regression:/home/jovyan/work jupyter/scipy-notebook"**
+      ```bash
+      docker run -p 8888:8888 -v C:\ml\01_linear_regression:/home/jovyan/work jupyter/scipy-notebook
+      ```
 
     Si no tuvieramos la imagen del contendedor **jupyter/scipy-notebook** descargada, Docker la descargará primero:
 
