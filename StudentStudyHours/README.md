@@ -1,4 +1,4 @@
-## <p align="center">ML-LinearRegression-StudentStudyHours</p>
+# <p align="center">ML-LinearRegression-StudentStudyHours</p>
 
 *Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esa recta para hacer predicciones sobre las calificaciones de los estudiantes.*
 
