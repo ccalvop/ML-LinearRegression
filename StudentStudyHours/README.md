@@ -36,7 +36,7 @@ En ambos casos, el resultado final es el mismo: se obtiene **una línea de regre
 
 ## Student_Study_Hours_Analysis_1.ipynb
 
-En una regresión lineal tratamos de encontrar una recta (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que hace las predicciones más cercanas a los datos reales. En el notebook 1 
+En una regresión lineal tratamos de encontrar una recta (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que hace las predicciones más cercanas a los datos reales.
 
 ```python
 #imports
