@@ -14,7 +14,7 @@ Liberia matplotlib.
 **Predicciones**:  
 Calcula manualmente las predicciones utilizando los parámetros de la regresión lineal encontrados.
 
-![diagram_caso1](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/ff337212-a6cf-4d46-9217-5cc3f76d09a2)
+![diagram_caso1copia](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/01945bec-8457-47f7-a2c9-139e3a5982bc)
 
 #### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
 **Carga y Exploración de Datos**:  
@@ -26,7 +26,7 @@ Libreria matplotlib y seaborn para una mayor variedad de visualizaciones.
 **Predicciones**:  
 Utilizaremos el modelo de regresión lineal entrenado con sklearn para hacer predicciones.
 
-![diagram_caso2](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/65da99df-9cc3-41d3-a848-acb87f52ca2a)
+![diagram_caso2 copia](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/4b45fdea-84dc-4f4d-83f6-cf0b5a87479e)
     
 En ambos casos, el resultado final es el mismo: se obtiene **una línea de regresión** que mejor se ajusta a los datos, y se pueden realizar predicciones utilizando esta línea. La solución en el caso 1 se centra en la comprensión y la implementación detallada del algoritmo mientras que el caso 2 se centra en la utilización de sklearn, que proporciona una interfaz más rápida y sencilla para implementar la regresión lineal. Compararemos ambos resultados.
 
