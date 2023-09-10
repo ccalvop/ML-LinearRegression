@@ -2,7 +2,7 @@
 
 #### <p align="center">¿Qué es la regresión lineal?</p>
 
-<p align="center">La regresión lineal es una herramienta para predecir una respuesta **cuantitativa**</p>
+<p align="center">La regresión lineal es una herramienta para predecir una respuesta cuantitativa</p>
 
 *La regresión lineal es un ejemplo de **aprendizaje supervisado** en el campo de **machine learning**. El aprendizaje supervisado se caracteriza por utilizar un conjunto de datos etiquetados, en el que cada ejemplo de entrenamiento contiene una etiqueta o valor de salida conocido. En el caso de la regresión lineal, el objetivo es predecir un valor numérico continuo (como una puntuación, una temperatura o un precio) a partir de un conjunto de características de entrada. El modelo de regresión lineal aprende a ajustar una línea recta o un hiperplano (para dimensiones superiores a 2) que mejor se ajusta a los datos para realizar estas predicciones. Existen dos variantes de regresión lineal, la *regresión lineal simple* (cuando hay una sola característica de entrada) y la regresión lineal múltiple (cuando hay múltiples características de entrada).*
 
@@ -39,7 +39,7 @@ Análisis del uso de la regresión lineal (simple o múltiple) para comprender c
 
 ***
 
-### <p align="center">Preparación del entorno Jupyter Notebook</p>
+## <p align="center">Preparación del entorno Jupyter Notebook</p>
 
 Pasos a seguir:
 
@@ -93,18 +93,5 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
   - En la terminal, verás un enlace que comienza con *http: //127.0.0.1:8888/?token=...* Copia este enlace y pégalo en tu navegador web. Se abrirá Jupyter Notebook en la ruta de trabajo. Podriamos crear un nuevo notebook o abrir el que creamos como archivo anteriormente.
 
-  - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Nombre_del_notebook.ipynb".
+  - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Nombre_del_notebook.ipynb" para comenzar el proyecto.
 
-
-***
-
-## ML-LinearRegression-LifeExpectancy
-
-...  
-diagram
-
-### Life_Expectancy_Analysis.ipynb
-
-...
-
-![underconstruction_ccalvop](https://github.com/ccalvop/ML-LinearRegression/assets/126183973/e91be467-9c96-43ae-80cd-d387abc48bde)
