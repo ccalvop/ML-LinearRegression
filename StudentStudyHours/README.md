@@ -1,12 +1,29 @@
 ## <p align="center">ML-LinearRegression-StudentStudyHours</p>
 
-*Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esta recta para hacer predicciones sobre las calificaciones de los estudiantes.*
+*Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esa recta para hacer predicciones sobre las calificaciones de los estudiantes.*
 
-En una regresión lineal tratamos de encontrar una línea (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que minimicen la función de costo.
+Vamos a implementar dos métodos (uno manual y otro mas automatizado) para calcular la regresión lineal y poder predecir calificaciones en base a un número de horas de estudio. Además utilizaremos distintas formas de cargar, analizar y representar los datos:
+
+    #### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
+    **Carga y Exploración de Datos**: Libreria Numpy.  
+    **Implementación de la Regresión Lineal**: Implementaremos manualmente el algoritmo de descenso de gradiente y otros cálculos para encontrar los parámetros de la regresión lineal.  
+    **Visualizaciones**: Liberia matplotlib.  
+    **Predicciones**: Calcula manualmente las predicciones utilizando los parámetros de la regresión lineal encontrados.
+
+    #### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
+    **Carga y Exploración de Datos**: Liberia Pandas.  
+    **Implementación de la Regresión Lineal**: Utilizaremos la libreria de python Scikit-learn para crear y entrenar directamente un modelo de regresión lineal.  
+    **Visualizaciones**: Libreria matplotlib y seaborn para una mayor variedad de visualizaciones.  
+    **Predicciones**: Utiliza el modelo de regresión lineal entrenado con sklearn para hacer predicciones.
+    
+En ambos casos, el resultado final es el mismo: se obtiene **una línea de regresión** que mejor se ajusta a los datos, y se pueden realizar predicciones utilizando esta línea.  
+La solución en el caso 1 se centra en la comprensión y la implementación detallada del algoritmo mientras que el caso 2 se centra en la utilización de sklearn, que proporciona una interfaz más rápida y sencilla para implementar la regresión lineal. Compararemos ambos resultados.
 
 <p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95" /></p>
 
 ### Student_Study_Hours_Analysis_1.ipynb
+
+En una regresión lineal tratamos de encontrar una recta (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que hace las predicciones más cercanas a los datos reales. En el notebook 1 
 
 ```python
 #imports
@@ -113,6 +130,8 @@ def compute_cost(b, m, points):
 ```
 
 La función **compute_cost** tiene como propósito calcular el costo o la pérdida del modelo en función de los parámetros b (intercepción) y m (pendiente). El objetivo del entrenamiento es encontrar los valores de b y m que minimizan este costo. La función de costo (o función de pérdida) en el contexto de la regresión lineal es una medida de cuánto se desvían las predicciones del modelo de los valores reales. En una regresión lineal, la función de costo comúnmente utilizada es el error cuadrático medio (MSE, por sus siglas en inglés). El objetivo del entrenamiento es minimizar esta función.
+
+**En términos prácticos, estamos buscando la línea de regresión que hace las predicciones más cercanas a los datos reales. Esto se logra ajustando los parámetros m y b de manera iterativa utilizando técnicas como el descenso de gradiente.**
 
 Los parámetros **b** y **m**:  
 **b** es el término de intercepción. Representa el valor que la variable dependiente (y en este caso, que serían las calificaciones) tiene cuando la variable independiente (x en este caso, que serían las horas de estudio) es igual a cero. En la mayoría de los casos, este valor no tiene un significado real, pero es importante para la forma de la recta.  
