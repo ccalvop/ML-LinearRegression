@@ -319,7 +319,10 @@ Una vez que tenemos los valores optimizados de "m" y "b", podemos usarlos para p
 **plt.xlabel('Horas de estudio') y plt.ylabel('Resultados de examenes')**  
 *Estas líneas agregan etiquetas a los ejes x e y, respectivamente.*  
 **plt.plot(x, pred, c='r')**  
-*Traza la línea de mejor ajuste en el gráfico "pred". La c='r' especifica que el color de la línea será rojo ('r' red en matplotlib).  
+*Esta función se utiliza para crear un gráfico de línea.  
+x: Estos son los datos de entrada, que representan la variable de características (en este caso, las horas de estudio).  
+pred: Estos son los valores predichos calculados por el modelo de regresión lineal. Representan las puntuaciones estimadas basadas en las horas de estudio.  
+c='r': Este argumento especifica el color de la línea. Aquí, c='r' significa que la línea se dibujará en rojo. La letra 'r' es una abreviatura para el color rojo.*  
 **plt.show()**  
 *Esta función muestra el gráfico.*  
 
