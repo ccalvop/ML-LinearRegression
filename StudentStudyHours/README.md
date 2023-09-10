@@ -1,8 +1,12 @@
 ## <p align="center">ML-LinearRegression-StudentStudyHours</p>
 
+*Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esta recta para hacer predicciones sobre las calificaciones de los estudiantes.*
+
+En una regresión lineal tratamos de encontrar una línea (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que minimicen la función de costo.
+
 <p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95" /></p>
 
-### Student_Study_Hours_Analysis.ipynb
+### Student_Study_Hours_Analysis_1.ipynb
 
 ```python
 #imports
@@ -32,8 +36,8 @@ y = np.array(points[:,1])
 
 #Plot the dataset
 plt.scatter(x,y)
-plt.xlabel('Horas de estudio')
-plt.ylabel('Resultados de examenes')
+plt.xlabel('Horas de estudio diarias')
+plt.ylabel('Resultado del examen')
 plt.title('Dataset')
 plt.show()
 ```
@@ -52,9 +56,9 @@ Se extrae la segunda columna de la matriz points y se almacena en la variable y
 #Plot the dataset   
 **plt.scatter(x,y)**
 *Utiliza la función scatter de Matplotlib para crear un gráfico de dispersión de los datos. Se pasa x como los valores en el eje X (horas de estudio) y y como los valores en el eje Y (puntuaciones de los exámenes). Esto crea un gráfico que muestra cómo las puntuaciones de los exámenes están relacionadas con las horas de estudio.*  
-**plt.xlabel('Horas de estudio')**  
-**plt.ylabel('Resultados de examenes')**  
-*Estos comandos agregan una etiqueta al eje X y al eje Y del gráfico, indicando que las unidades en el eje X son "Hours of study" (Horas de estudio) y en el eje Y son "Test scores" (Puntuaciones de los exámenes).*  
+**plt.xlabel('Horas de estudio diarias')**  
+**plt.ylabel('Resultado del examen')**  
+*Estos comandos agregan una etiqueta al eje X y al eje Y del gráfico, indicando que las unidades en el eje X son "Horas de estudio diarias" y en el eje Y son "Resultado del examen".*  
 **plt.title('Dataset')**  
 *Agrega un título al gráfico.*  
 **plt.show()**  
@@ -108,10 +112,16 @@ def compute_cost(b, m, points):
     return total_cost / len(points)
 ```
 
-La función **compute_cost** tiene como propósito calcular el costo o la pérdida del modelo en función de los parámetros b (independiente) y m (pendiente). El objetivo del entrenamiento es encontrar los valores de b y m que minimizan este costo. La función de costo (o función de pérdida) en el contexto de la regresión lineal es una medida de cuánto se desvían las predicciones del modelo de los valores reales. En una regresión lineal, la función de costo comúnmente utilizada es el error cuadrático medio (MSE, por sus siglas en inglés). El objetivo del entrenamiento es minimizar esta función.
+La función **compute_cost** tiene como propósito calcular el costo o la pérdida del modelo en función de los parámetros b (intercepción) y m (pendiente). El objetivo del entrenamiento es encontrar los valores de b y m que minimizan este costo. La función de costo (o función de pérdida) en el contexto de la regresión lineal es una medida de cuánto se desvían las predicciones del modelo de los valores reales. En una regresión lineal, la función de costo comúnmente utilizada es el error cuadrático medio (MSE, por sus siglas en inglés). El objetivo del entrenamiento es minimizar esta función.
+
+Los parámetros **b** y **m**:  
+**b** es el término de intercepción. Representa el valor que la variable dependiente (y en este caso, que serían las calificaciones) tiene cuando la variable independiente (x en este caso, que serían las horas de estudio) es igual a cero. En la mayoría de los casos, este valor no tiene un significado real, pero es importante para la forma de la recta.  
+**m** es el coeficiente de la pendiente. Indica cuánto cambia la variable dependiente cuando la variable independiente cambia en una unidad. Por ejemplo, si m es 2, significa que por cada unidad de cambio en x, y aumenta en 2 unidades.
 
 **def compute_cost(b, m, points)**  
-*Toma tres argumentos: b, m, y points. b y m son los parámetros del modelo que queremos evaluar, mientras que points es el conjunto de datos sobre el cual estamos calculando el costo.*  
+*Toma tres argumentos: b, m, y points.     
+b y m son los parámetros del modelo que estamos tratando de aprender. Estos parámetros determinan la recta que mejor se ajusta a los datos.  
+Points es el conjunto de datos sobre el cual estamos calculando el costo.*  
 **total_cost = 0**  
 *Crea e inicializa la variable total_cost a 0. Esta variable se utilizará para acumular el costo.*  
 **x = points[:, 0]  
@@ -269,8 +279,9 @@ plt.show()
 
 **plt.scatter(x, y)**  
 *Utiliza la función scatter de Matplotlib para crear un gráfico de dispersión de los datos*  
-**pred = m * x + b**  
-*Se calculan las predicciones del modelo utilizando los parámetros optimizados m y b. Representa la mejor línea de ajuste que el modelo ha aprendido.*  
+**pred (y) = m * x + b**  
+*Se calculan las predicciones del modelo utilizando los parámetros optimizados m y b. Representa la mejor línea de ajuste que el modelo ha aprendido.  
+Una vez que tenemos los valores optimizados de "m" y "b", podemos usarlos para predecir "y" (calificación) para cualquier valor de "x" (horas de estudio).*  
 **plt.title('Modelo de Regresión Lineal: Estimación de Calificaciones')**  
 *Se establece el título del gráfico.*  
 **plt.xlabel('Horas de estudio') y plt.ylabel('Resultados de examenes')**  
