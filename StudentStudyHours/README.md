@@ -320,13 +320,11 @@ Una vez que tenemos los valores optimizados de "m" y "b", podemos usarlos para p
 *Estas líneas agregan etiquetas a los ejes x e y, respectivamente.*  
 **plt.plot(x, pred, c='r')**  
 *Esta función se utiliza para crear un gráfico de línea.  
-x: Estos son los datos de entrada, que representan la variable de características (en este caso, las horas de estudio).  
-pred: Estos son los valores predichos calculados por el modelo de regresión lineal. Representan las puntuaciones estimadas basadas en las horas de estudio.  
-c='r': Este argumento especifica el color de la línea. Aquí, c='r' significa que la línea se dibujará en rojo. La letra 'r' es una abreviatura para el color rojo.*  
+**x**: Estos son los datos de entrada, que representan la variable de características (en este caso, las horas de estudio). **pred**: Estos son los valores predichos calculados por el modelo de regresión lineal. Representan las puntuaciones estimadas basadas en las horas de estudio. **c='r'**: Este argumento especifica el color de la línea. c='r' significa que la línea se dibujará en rojo. La letra 'r' es una abreviatura de red (rojo en inglés).*  
 **plt.show()**  
 *Esta función muestra el gráfico.*  
 
-#### Diferentes hiperparámetros y sus resultados
+### Modificando los hiperparámetros y sus resultados en la predicción
 
 ...  
 img
