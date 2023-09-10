@@ -1,3 +1,5 @@
+<p align="center"><img src="" /></p>
+
 ## <p align="center">ML-LinearRegression-StudentStudyHours</p>
 
 *Realizaremos un análisis de regresión lineal simple para encontrar la mejor recta que se ajusta a los datos y luego utilizar esa recta para hacer predicciones sobre las calificaciones de los estudiantes.*
@@ -30,9 +32,9 @@ Utilizaremos el modelo de regresión lineal entrenado con sklearn para hacer pre
     
 En ambos casos, el resultado final es el mismo: se obtiene **una línea de regresión** que mejor se ajusta a los datos, y se pueden realizar predicciones utilizando esta línea. La solución en el caso 1 se centra en la comprensión y la implementación detallada del algoritmo mientras que el caso 2 se centra en la utilización de sklearn, que proporciona una interfaz más rápida y sencilla para implementar la regresión lineal. Compararemos ambos resultados.
 
-<p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression-StudentStudyHours/assets/126183973/90e9c9c6-a419-411e-a675-6ba13de42c95" /></p>
+***
 
-### Student_Study_Hours_Analysis_1.ipynb
+## Student_Study_Hours_Analysis_1.ipynb
 
 En una regresión lineal tratamos de encontrar una recta (representada por la ecuación y = m x + b) que mejor se ajuste a los datos proporcionados. El objetivo matemático es encontrar los valores de m y b que hace las predicciones más cercanas a los datos reales. En el notebook 1 
 
