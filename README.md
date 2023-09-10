@@ -9,7 +9,7 @@
 #### <p align="center">Proyectos</p>
 
 **Regresión lineal simple**:  
-ML-LinearRegression-**StudentStudyHours**. *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones. Un ejemplo típico para implenetar la regresión lineal*
+ML-LinearRegression-**StudentStudyHours**. *Este proyecto plantea analizar la relación entre las horas de estudio de los estudiantes y sus calificaciones.*
 
 **Regresión lineal multiple**:  
 ML-LinearRegression-**LifeExpectancy**. *Este proyecto busca explorar cómo diversos factores impactan en la expectativa de vida de las personas.*
@@ -103,15 +103,15 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
 ```python
 #imports
-from numpy import *
+import numpy as np
 import matplotlib.pyplot as plt
 
 #magic command
 %matplotlib inline
 ```
 
-**from numpy import \***   
-Numpy es una biblioteca ampliamente utilizada para realizar operaciones matriciales y numéricas en Python. Importar * de numpy significa que estás importando todas las funciones y objetos de numpy en el espacio de nombres actual. Esto te permite usar funciones como np.array(), np.mean(), y otras sin tener que escribir numpy. antes de ellas.
+**import numpy as np**   
+NumPy es una biblioteca para realizar operaciones matriciales y numéricas en Python. Importamos la librería NumPy con el alias np para abreviar. En lugar de escribir numpy cada vez que necesitas usar una función de esta librería, escribimos np. Por ejemplo, en lugar de numpy.array(), puedes escribir np.array().
 
 **import matplotlib.pyplot as plt**  
 Matplotlib es una biblioteca gráfica que se utiliza para crear visualizaciones, como gráficos y gráficos. matplotlib.pyplot es un módulo dentro de Matplotlib que proporciona una interfaz similar a la de MATLAB para crear gráficos. La convención de renombrar este módulo como plt es común y facilita el uso.
@@ -121,7 +121,7 @@ Es una "comando mágico" en Jupyter Notebook que permite que las gráficas gener
 
 ```python
 #Load data
-points = np.genfromtxt('score.csv', delimiter=',')
+points = np.genfromtxt('score.csv', delimiter=',', skip_header=1)
 
 #Extract columns
 x = np.array(points[:,0])
@@ -136,8 +136,8 @@ plt.show()
 ```
 
 #Load data  
-**points = genfromtxt('score.csv', delimiter=',')**  
-Este código utiliza la función genfromtxt de la biblioteca NumPy para cargar datos desde un archivo CSV llamado 'score.csv'. El parámetro delimiter=',' indica que las columnas en el archivo CSV están separadas por comas. Los datos se cargan en la variable points, que será una matriz NumPy que contiene los datos del archivo CSV.
+**points = np.genfromtxt('score.csv', delimiter=',', skip_header=1)**  
+Este código utiliza la función genfromtxt de la biblioteca NumPy para cargar datos desde un archivo CSV llamado 'score.csv'. El parámetro **delimiter=','** indica que las columnas en el archivo CSV están separadas por comas. El parámetro **skip_header=1** indica que se debe omitir la primera fila del archivo CSV al cargar los datos. En nuestro caso la primera fila es un encabezado con etiquetas, y estamos indicando que no queremos cargarlo como datos. Los datos se cargan en la variable points, que será una matriz NumPy que contiene los datos del archivo CSV.
 
 #Extract columns  
 **x = array(points[:,0])**  
