@@ -4,17 +4,17 @@
 
 Vamos a implementar dos métodos (uno manual y otro mas automatizado) para calcular la regresión lineal y poder predecir calificaciones en base a un número de horas de estudio. Además utilizaremos distintas formas de cargar, analizar y representar los datos:
 
-    #### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
-    **Carga y Exploración de Datos**: Libreria Numpy.  
-    **Implementación de la Regresión Lineal**: Implementaremos manualmente el algoritmo de descenso de gradiente y otros cálculos para encontrar los parámetros de la regresión lineal.  
-    **Visualizaciones**: Liberia matplotlib.  
-    **Predicciones**: Calcula manualmente las predicciones utilizando los parámetros de la regresión lineal encontrados.
+#### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
+**Carga y Exploración de Datos**: Libreria Numpy.  
+**Implementación de la Regresión Lineal**: Implementaremos manualmente el algoritmo de descenso de gradiente y otros cálculos para encontrar los parámetros de la regresión lineal.  
+**Visualizaciones**: Liberia matplotlib.  
+**Predicciones**: Calcula manualmente las predicciones utilizando los parámetros de la regresión lineal encontrados.
 
-    #### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
-    **Carga y Exploración de Datos**: Liberia Pandas.  
-    **Implementación de la Regresión Lineal**: Utilizaremos la libreria de python Scikit-learn para crear y entrenar directamente un modelo de regresión lineal.  
-    **Visualizaciones**: Libreria matplotlib y seaborn para una mayor variedad de visualizaciones.  
-    **Predicciones**: Utiliza el modelo de regresión lineal entrenado con sklearn para hacer predicciones.
+#### Caso 2: Student_Study_Hours_Analysis_2.ipynb  
+**Carga y Exploración de Datos**: Liberia Pandas.  
+**Implementación de la Regresión Lineal**: Utilizaremos la libreria de python Scikit-learn para crear y entrenar directamente un modelo de regresión lineal.  
+**Visualizaciones**: Libreria matplotlib y seaborn para una mayor variedad de visualizaciones.  
+**Predicciones**: Utiliza el modelo de regresión lineal entrenado con sklearn para hacer predicciones.
     
 En ambos casos, el resultado final es el mismo: se obtiene **una línea de regresión** que mejor se ajusta a los datos, y se pueden realizar predicciones utilizando esta línea.  
 La solución en el caso 1 se centra en la comprensión y la implementación detallada del algoritmo mientras que el caso 2 se centra en la utilización de sklearn, que proporciona una interfaz más rápida y sencilla para implementar la regresión lineal. Compararemos ambos resultados.
