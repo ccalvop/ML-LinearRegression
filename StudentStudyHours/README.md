@@ -6,7 +6,7 @@ Vamos a implementar dos métodos (uno manual y otro mas automatizado) para calcu
 
 <p align="center"><img src="https://github.com/ccalvop/ML-LinearRegression/assets/126183973/05ed8664-33d4-45f7-a990-ba713e13c179" /></p>
 
-### Caso 1: Student_Study_Hours_Analysis_1.ipynb  
+### <p align="center">Caso 1: Student_Study_Hours_Analysis_1.ipynb</p>  
 **Carga y Exploración de Datos**:  
 Libreria Numpy.  
 **Implementación de la Regresión Lineal**:  
