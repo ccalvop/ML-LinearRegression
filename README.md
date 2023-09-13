@@ -12,7 +12,8 @@
 
 **Regresión lineal simple**:  
 [ML-LinearRegression-**StudentStudyHours**](https://github.com/ccalvop/ML-LinearRegression/tree/main/StudentStudyHours)  
-*En este proyecto añalizaremos la relación entre las horas de estudio de los estudiantes y sus calificaciones. Implementaremos dos métodos: uno manual y otro automatizado, compararemos los resultados.*
+*En este proyecto añalizaremos la relación entre las horas de estudio de los estudiantes y sus calificaciones.  
+Implementaremos dos métodos: uno manual y otro automatizado, compararemos los resultados.*
 
 **Regresión lineal multiple**:  
 [ML-LinearRegression-**LifeExpectancy**](https://github.com/ccalvop/ML-LinearRegression/tree/main/LifeExpectancy)  
