@@ -2,7 +2,7 @@ Conexión al Servidor:
 - Nombre de Host: servidor-ubuntu
 - Usuario SSH: ccalvop
 - Contraseña SSH: ********
-- Comando SSH: `ssh ubuntu@ip`; `tmux new -s autocommit_session`
+- Comando SSH: `ssh ubuntu@ip`; `tmux new -s x_session`
 
 Actualizaciones del Repositorio:
 - Ruta del Repositorio: /@repositorio
