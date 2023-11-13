@@ -98,3 +98,5 @@ Podemos usar Jupyter Notebook instalado localmente (en mi caso Windows) o hacerl
 
   - Ya en Jupyter Notebook, creamos un nuevo fichero "Notebook >Python 3 (ipykernel)" y lo renombramos "Nombre_del_notebook.ipynb" para comenzar el proyecto.
 
+
+TIME - 2023-11-13 18:09:06
